@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+			
+			        function openWin1() {
+			            myWindow = window.open('', '', 'width=400,height=300');
+			            myWindow.document.write('<form><h1>你好游客！</h1><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="提交"> ');
+			            myWindow.focus();
+			            myWindow.document.body.style.backgroundColor = 'A2FFFD'
+			
+			        }
+			
+			        function openWin2() {
+			            myWindow = window.open('', '', 'width=400,height=300' );
+			            myWindow.document.write('<form><h1>注册</h1><p>创建用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="注册"> ');
+			            myWindow.focus();
+			            myWindow.document.body.style.backgroundColor = '97F3CB'
+			        }
+			    
+		</script>
+	</head>
+	<body bgcolor="#E6E6FA">
+		<input type="button" value="登录" onclick="openWin1()">
+		<input type="button" value="注册" onclick="openWin2()">
+		<p><font size='10' color='red'>这是一个主页</p>
+		
+		<script>
+		function openWin1() {
+		    myWindow = window.open('', '', 'width=400,height=300');
+		    myWindow.document.write('<form><h1>你好游客！</h1><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="提交"> ');
+		    myWindow.focus();
+		    myWindow.document.body.style.backgroundColor = 'A2FFFD'
+					
+		}
+					
+		function openWin2() {
+		    myWindow = window.open('', '', 'width=400,height=300' );
+		    myWindow.document.write('<form><h1>注册</h1><p>创建用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="注册"> ');
+		    myWindow.focus();
+		    myWindow.document.body.style.backgroundColor = '97F3CB'
+		}
+		</script>
+	</body>
+</html>
