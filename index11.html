@@ -1,50 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title></title>
 		<meta charset="utf-8" />
-         <title></title>
-		<script>
-		                     function openWin() {
-		                         myWindow = window.open('', '', 'width=300,height=200');
-		                         myWindow.document.write('<form><h1>你好游客！</h1><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="提交"> ');
-		                         myWindow.focus();
-		                         myWindow.document.body.style.backgroundColor = 'blue'
-		             
-		                     }
-		             
-		                     function o() {
-		                         myWindow = window.open('', '', 'width=300,height=200', );
-		                         myWindow.document.write('<form><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="注册"> ');
-		                         myWindow.focus();
-		                         myWindow.document.body.style.backgroundColor = 'red'
-		                     }
-		           
-		  </Script>  
+		<style >
+		  
+    a{text-decoration: none;}
+		</style>
 	</head>
 	<body>
-		<input type="button" value="登录"onclice="openWin()">
-		<input type="button" value="注册"onclice="o()">
-		<p>这是主页</p>
-		<script>
-		       
-		              
-		                      function openWin() {
-		                          myWindow = window.open('', '', 'width=300,height=200');
-		                          myWindow.document.write('<form><h1>你好游客！</h1><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="提交"> ');
-		                          myWindow.focus();
-		                          myWindow.document.body.style.backgroundColor = 'blue'
-		              
-		                      }
-		              
-		                      function o() {
-		                          myWindow = window.open('', '', 'width=300,height=200', );
-		                          myWindow.document.write('<form><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="注册"> ');
-		                          myWindow.focus();
-		                          myWindow.document.body.style.backgroundColor = 'red'
-		                      }
-		  </Script>  
-		  <script>
-		  document.write('<script src="//' + (location.host || 'localhost').split(':')[0] + ':35929/livereload.js?snipver=1"></' + 'script>')
+	<input type="text" id="t1">
+	<button onclick="copy()">复制</button>
+	<input type="text" id="t2">
+	<br>
+	<a href="#" style=" display: none;">复制成功<br></a>
+	<script type="text/javascript">
+	    function copy() {
+	        document.getElementById("t2").value = document.getElementById("t1").value;
+	        if ($("a").css("display") != "block") {
+	            $("a").css("display", "block");
+	        } else {
+	            $("a").css("display", "none");
+	        }
+	    }
 	</script>
 	</body>
 </html>
